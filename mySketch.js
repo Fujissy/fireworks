@@ -2,8 +2,8 @@ var fires = [];
 
 function setup() {
     createCanvas(700,300);
-    colorMode(HSB, 360, 100, 100);
-    background(240,100,0);
+    colorMode(HSB, 360, 100, 100, 100);
+    background(240,100,20);
     blendMode(SCREEN);
     noStroke();
 }
@@ -45,7 +45,7 @@ function mousePressed() {
                 clH+random(-20,20), // h
                 100*(l+2)/(layer+1))); //s
         }
-        if (random(1)<.4) clH += 180;
+        if (random(1)<.3) clH += 180;
         clH += 360+random(-60,60);
         clH %= 360;
     }
